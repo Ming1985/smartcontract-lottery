@@ -65,7 +65,7 @@ contract Lottery is VRFConsumerBase, Ownable {
         emit RequestedRandomness(requestId);
     }
 
-    function fulfillRandomness(bytes32 _requestId, uint256  _randomness)
+    function fulfillRandomness(bytes32 _requestId, uint256 _randomness)
         internal
         override
     {
